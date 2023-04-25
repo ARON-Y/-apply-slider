@@ -64,6 +64,7 @@ a {
   float: left;
   width: 20%;
   padding: 20px;
+  perspective: 500px;
 }
 #slider .btns li a {
   display: block;
@@ -76,7 +77,7 @@ a {
   border-radius: 20px;
   transition: 1s;
 }
-#slider .btns li a.on a {
+#slider .btns li.on a {
   background-color: #222;
   color: #fff;
   transform: rotateY(360deg);
@@ -86,4 +87,20 @@ a {
   top: 50%;
   margin-top: -160px;
   right: -160px;
+  transition: 1s;
+}
+#slider #ring.rot0 {
+  transform: rotate(0deg);
+}
+#slider #ring.rot1 {
+  transform: rotate(60deg);
+}
+#slider #ring.rot2 {
+  transform: rotate(120deg);
+}
+#slider #ring.rot3 {
+  transform: rotate(180deg);
+}
+#slider #ring.rot4 {
+  transform: rotate(240deg);
 }/*# sourceMappingURL=style.css.map */

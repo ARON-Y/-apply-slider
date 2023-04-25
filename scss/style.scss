@@ -69,6 +69,7 @@ a {
       float: left;
       width: 20%;
       padding: 20px;
+      perspective: 500px;
 
       a {
         display: block;
@@ -80,13 +81,13 @@ a {
         border: 1px solid #222;
         border-radius: 20px;
         transition: 1s;
+      }
 
-        &.on {
-          a {
-            background-color: #222;
-            color: #fff;
-            transform: rotateY(360deg);
-          }
+      &.on {
+        a {
+          background-color: #222;
+          color: #fff;
+          transform: rotateY(360deg);
         }
       }
     }
@@ -97,5 +98,22 @@ a {
     top: 50%;
     margin-top: -160px; // 이미지 사이즈가 320x320px이라서
     right: -160px;
+    transition: 1s;
+
+    &.rot0 {
+      transform: rotate(0deg);
+    }
+    &.rot1 {
+      transform: rotate(60deg);
+    }
+    &.rot2 {
+      transform: rotate(120deg);
+    }
+    &.rot3 {
+      transform: rotate(180deg);
+    }
+    &.rot4 {
+      transform: rotate(240deg);
+    }
   }
 }
